@@ -1,28 +1,10 @@
-import {
-  Card,
-  Tabs,
-  Textarea,
-  TextInput,
-  Select,
-  Label,
-  Button,
-  Table,
-  Modal,
-} from "flowbite-react";
+import { TextInput, Select, Button, Modal } from "flowbite-react";
 import React, { useEffect, useState } from "react";
-import { CiCirclePlus } from "react-icons/ci";
-import { GoPlus } from "react-icons/go";
-import { IoImageOutline } from "react-icons/io5";
-import { MdOndemandVideo } from "react-icons/md";
 
-// react quil
-
-import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import Overview from "./Overview";
 import Pricing from "./Pricing";
 import Description from "./Description";
-import Requirment from "./Requirment";
 import axios from "axios";
 import Gallery from "./Gallery";
 

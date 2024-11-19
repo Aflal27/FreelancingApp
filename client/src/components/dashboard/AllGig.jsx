@@ -4,7 +4,7 @@ import { MdModeEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-import UpdateGig from "./gig/updateGig/UpdateGig.jsx";
+import UpdateGig from "./gig/updateGig/UpdateGig";
 import toast from "react-hot-toast";
 
 export default function AllGig() {
