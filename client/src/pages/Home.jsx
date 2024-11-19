@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Thumbnail from "../components/layout/Thumbnail";
-import CatagoryGigs from "../components/gigs/catagoryGigs";
+// import CatagoryGigs from "../components/gigs/catagoryGigs";
 import Brands from "../components/layout/Brands";
 import Founders from "../components/layout/Founders";
 import axios from "axios";
