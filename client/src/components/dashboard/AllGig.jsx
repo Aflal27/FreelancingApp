@@ -4,7 +4,7 @@ import { MdModeEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-import UpdateGig from "./gig/updateGig/updateGig";
+import UpdateGig from "./gig/updateGig/UpdateGig";
 import toast from "react-hot-toast";
 
 export default function AllGig() {
@@ -17,7 +17,6 @@ export default function AllGig() {
 
   const { success } = location.state || {};
 
-
   useEffect(() => {
     fetchData();
   }, [success, updateGigModal]);
@@ -26,7 +25,6 @@ export default function AllGig() {
     const { data } = await axios.get("/api/gig/get-all");
     setAllGig(data);
   };
-
 
   const handleSingleGig = async (id) => {
     try {
