@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Thumbnail from "../components/layout/Thumbnail";
-import CatagoryGigs from "../components/gigs/CatagoryGigs.jsx";
+import CatagoryGigs from "../components/gigs/catagoryGigs";
 import Brands from "../components/layout/Brands";
 import Founders from "../components/layout/Founders";
 import axios from "axios";
@@ -50,9 +50,9 @@ export default function Home() {
       <div className="md:p-10 rounded-full ">
         <Thumbnail />
       </div>
-      <div className=" w-screen md:px-5 ">
+      {/* <div className=" w-screen md:px-5 ">
         <CatagoryGigs />
-      </div>
+      </div> */}
 
       <div className=" md:px-8">
         <h3 className=" text-lg font-semibold p-2">Top Rate</h3>
