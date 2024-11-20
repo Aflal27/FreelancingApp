@@ -80,7 +80,7 @@ export default function App() {
 
   // socket
   useEffect(() => {
-    const socketConnection = io(import.meta.env.VITE_FRONTEND_URL, {
+    const socketConnection = io(import.meta.env.VITE_API_URL, {
       auth: {
         token: localStorage.getItem("token"),
       },

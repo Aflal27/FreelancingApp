@@ -17,6 +17,7 @@ import orderRouter from "./routes/orderRoute.js";
 // socket
 import { server } from "./socket/index.js";
 import { app } from "./socket/index.js";
+import path from "path";
 app.use(
   cors({
     origin: process.env.FRONTENDURL,
@@ -63,6 +64,15 @@ app.use("/api/thumb", thumbRouter);
 app.use("/api/brand", brandsRouter);
 app.use("/api/person", personRouter);
 app.use("/api/order", orderRouter);
+
+// build
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, "../client/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+});
 
 server.listen(8000, () => {
   console.log("server is start");
